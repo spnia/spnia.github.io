@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Lexend:wght@500&display=swap');
+
+/* 한글폰트 */
+@font-face {
+    font-family: 'DOSPilgiMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/DOSPilgiMedium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.introduce {
+    background-color: #960000;
+    transition: 1s all;
+}
+
+.project {
+    background-color: #B35A00;
+    transition: 1s all;
+}
+
+.portstory {
+    background-color: #AD8E00;
+    transition: 1s all;
+}
+
+.artworks {
+    background-color: #64C900;
+    transition: 1s all;
+}
+
+.easteregg {
+    background-color: #0A4176;
+    background-size: 800% 800%;
+}
+
+#title {
+    text-align: center;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+.titleimg {
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+}
+
+.titleimganileft {
+    animation: titleimgpositionleft1 1s ease-in-out, titleimgpositionleft2 1s ease-in-out 1s;
+}
+
+.titleimganiright {
+    animation: titleimgpositionright1 1s ease-in-out, titleimgpositionright2 1s ease-in-out 1s;
+}
+
+.titletitle {
+    margin-top: 5vh;
+    font-size: 200%;
+}
+
+.titlesub {
+    margin-top: 1vh;
+    font-size: 100%;
+}
+
+.titletitlesubani {
+    animation: textopacity1 1s ease-in-out, textopacity2 1s ease-in-out 1s;
+}
+
+.openbtn {
+    text-align: center;
+    background-color: #fff;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    position: fixed;
+    opacity: 30%;
+    transition: .25s all;
+    position: fixed;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 35px;
+}
+
+.openbtn:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+
+#rightbutton {
+    color: #fff;
+    opacity: 30%;
+    position: fixed;
+    left: 95%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: .25s all;
+}
+
+#rightbutton:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+#leftbutton {
+    color: #fff;
+    opacity: 30%;
+    position: fixed;
+    left: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: .25s all;
+}
+
+#leftbutton:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+/* 알람 */
+.easteregg1alert {
+    display: inline-block;
+    color: #000;
+    background-color: white;
+    text-align: right;
+    line-height: 50px;
+    height: 50px;
+    width: 350px;
+    border-radius: 10px;
+    position: fixed;
+    right: 10px;
+    animation: alertstart 3.5s ease-in-out;
+    font-family: 'DOSPilgiMedium';
+}
+
+/* 애니메이션용 클래스 */
+.buttonani {
+    animation: btnopacity 1s ease-in-out;
+}
+
+.buttonremoveani {
+    animation: btnopacityremove 1s ease-in-out;
+}
+
+.openbtnani {
+    animation: openbtnopacity1 1s ease-in-out, openbtnopacity2 1s ease-in-out 1s;
+}
+
+.eastereggani {
+    animation: easteregg .83s ease-in-out infinite;
+    background-image: linear-gradient(to left, red, orange, green, blue, purple);
+}
+
+@keyframes titleimgpositionleft1 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(300%);
+    }
+}
+
+@keyframes titleimgpositionleft2 {
+    0% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes titleimgpositionright1 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+@keyframes titleimgpositionright2 {
+    0% {
+        transform: translateX(300%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes textopacity1 {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes textopacity2 {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes openbtnopacity1 {
+    0% {
+        opacity: 30%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes openbtnopacity2 {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 30%;
+    }
+}
+
+@keyframes btnopacity {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 30%;
+    }
+}
+
+@keyframes btnopacityremove {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes alertstart {
+    0% {
+        opacity: 0%;
+        transform: translateX(100px);
+    }
+    25% {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+    75% {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 0%;
+        transform: translateX(100px);
+    }
+}
+
+@keyframes easteregg {
+    0% {
+        transform: translateY(40vh);
+        background-position: 0% 50%;
+    }
+    50% {
+        transform: translateY(60vh);
+        background-position: 100% 50%;  
+    }
+    100% {
+        transform: translateY(40vh);
+        background-position: 0% 50%;
+    }
+}
+
+/* open버튼 눌렀을 때 사라지는 애니메이션 */
+.titletitlesub-openclicked {
+    animation: textani 1s ease-in;
+}
+
+@keyframes textani {
+    0% { transform: translateY(50vh); }
+    100% { transform: translateY(-100vh); }
+}
