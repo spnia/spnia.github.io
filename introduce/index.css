@@ -1,0 +1,146 @@
+/* 한글폰트 */
+@import url("https://font.elice.io/css?family=Elice+DX+Neolli");
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Pretendard-Regular';
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    cursor: none;
+    overflow-x: hidden;
+}
+
+html {
+    position: relative;
+    background-color: #960000;
+}
+
+.loadBackground {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('../img/introduce/background.png');
+    height: 100vh;
+    animation: onload 2s ease-out;
+}
+
+/* 마우스커서 */
+.mouseCursor {
+    background-color: #000;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    z-index: 1;
+    transform: translate(-15px, -15px);
+    font-size: 10px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+
+#prebutton {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    left: 5%;
+    margin-top: 3.5%;
+    font-size: 2vw;
+    z-index: 1;
+}
+
+#well {
+    z-index: 0;
+}
+
+.scrollImg {
+    opacity: 0%;
+}
+
+.sun {
+    position: fixed;
+    transform: translateY(10%) scale(100%);
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.well1 {
+    position: fixed;
+    transform: translateY(13%) scale(100%);
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.well2 {
+    position: fixed;
+    transform: translateY(30%) scale(130%);
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.well3 {
+    position: fixed;
+    transform: translateY(47%) scale(140%);
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.well4 {
+    position: absolute;
+    transform: translateY(65%) scale(160%);
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.pre {
+    position: relative;
+    z-index: 0;
+    color: #fff;
+    font-size: 5vw;
+    left: 5%;
+    margin-top: 7%;
+    font-family: 'Elice DX Neolli', sans-serif;
+}
+
+.block1 {
+    position: absolute;
+    background-color: #fff;
+    margin-top: 35%;
+    width: 100%;
+    height: 1500px;
+    z-index: 0;
+    opacity: 0%;
+}
+
+@keyframes mouseCursorClicked {
+    0% {
+    }
+    100% {
+    }
+}
+
+.onloadani {
+    animation: onload 2s ease-out;
+}
+
+@keyframes onload {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
