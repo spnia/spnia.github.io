@@ -1,0 +1,124 @@
+@import url("https://font.elice.io/css?family=Elice+DX+Neolli");
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+#content1 {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    width: 100%;
+}
+
+#content1:hover {
+    cursor: auto;
+}
+
+#about-sub {
+    text-align: center;
+    font-family: 'Pretendard-Regular';
+    color: #505050;
+}
+
+.about-sub-highlight {
+    font-family: 'Pretendard-Regular';
+    color: #E26A6D;
+    font-weight: 900;
+}
+
+/* 프로필 */
+#myinfo {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 400px 400px 400px 400px;
+    grid-template-rows: 150px 150px;
+    grid-template-areas:
+        "picture name birth address"
+        "picture callnumber email education";
+    grid-gap: 10px;
+    margin-top: 30px;
+}
+
+#picture {
+    height: 100%;
+    background-image: url();
+    background-size: cover;
+    grid-area: picture;
+}
+
+#myinfo div {
+    font-family: 'Pretendard-Regular';
+}
+
+#my-info {
+    font-size: 17px;
+}
+
+.my {
+    margin-top: 10px;
+    font-size: 27px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E26A6D;
+    color: #ffffff;
+    border: 0px #505050 solid;
+    transition: .1s all;
+    z-index: 2;
+}
+
+.item:hover {
+    background-color: #505050;
+    color: #fff;
+}
+
+.item-son {
+    font-weight: 700;
+}
+
+#name {
+    grid-area: name;
+}
+
+#birth {
+    grid-area: birth;
+}
+
+#address {
+    grid-area: address;
+}
+
+#callnumber {
+    grid-area: callnumber;
+}
+
+#email {
+    grid-area: email;
+}
+
+#education {
+    grid-area: education;
+}
+
+#github {
+    grid-area: github;
+}
+
+#my-github {
+    color: #fff;
+    z-index: 3;
+}
+
+#my-github:hover {
+    cursor: pointer;
+}

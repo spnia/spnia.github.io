@@ -1,0 +1,119 @@
+/* 한글폰트 */
+@import url("https://font.elice.io/css?family=Elice+DX+Neolli");
+
+/* 영문폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Lexend:wght@400;500&display=swap');
+
+* {
+    font-family: 'Elice DX Neolli', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    cursor: none;
+    overflow-x: hidden;
+}
+
+hr {
+    height: 5px;
+    width: 60px;
+    border: 0;
+    background-color: #505050;
+}
+
+.loadBackground {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('../img/introduce/background.png');
+    height: 100vh;
+}
+
+/* 마우스커서 */
+.mouseCursor {
+    background-color: #000;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    transform: translate(-15px, -15px);
+    font-size: 7px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+
+.sun {
+    position: fixed;
+    transform: translateY(15%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.well1 {
+    position: fixed;
+    transform: translateY(30%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.well2 {
+    position: fixed;
+    transform: translateY(25%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.well3 {
+    position: fixed;
+    transform: translateY(27%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.well4 {
+    position: absolute;
+    transform: translateY(27%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.pre {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    left: 5%;
+}
+
+#pre-ani1 {
+    z-index: 2;
+}
+
+.contents-title {
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lexend', sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-weight: 900;
+    color: #505050;
+}

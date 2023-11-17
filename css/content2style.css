@@ -1,0 +1,48 @@
+#content2 {
+    position: absolute;
+    background-color: #e9e9e9;
+    top: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#content2:hover {
+    cursor: auto;
+}
+
+/* 스킬 리스트 */
+#skillslist {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    margin-top: 30px;
+}
+
+.group {
+    border-top: 7px #E26A6D solid;
+    background-color: #fff;
+    padding-left: 20px;
+    box-shadow: 0px 5px 7px #909090;
+    color: #505050;
+    transition: .1s all;
+}
+
+.group:hover {
+    border-top: 7px #505050 solid;
+}
+
+.listtitle {
+    font-weight: 900;
+    font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lexend', sans-serif;
+}
+
+.content2icons {
+    font-size: 100%;
+}
+
+ul > li {
+    list-style-type: none;
+    font-family: 'Pretendard-Regular';
+}
